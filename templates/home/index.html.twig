@@ -17,7 +17,7 @@
 
 {% for compteur in 0..10 %}
 <div>{{compteur}}</div>
-{%endfor%}
+{%endfor%}#
 
 {% for compteur in 'a'..'z' %}
 <div>{{loop.index}}/{{loop.length}} - {{compteur}}</div>
@@ -41,12 +41,12 @@
 </div>
 {%endfor%}
 
-{{42.55 | round(1)}} {#arrondit a 1 chiffre apres la virgule#}
+{{42.55 | round(1)}}<p>arrondit a 1 chiffre apres la virgule 42.55 | round(1)</p><br> 
 
-{{43.55 | round}}
+{{43.55 | round}} <p>arrondit  43.55 | round/p><br>
 
-{{42.55 | round(1 ,'floor')}}
+{{42.55 | round(1 ,'floor')}}<p>arrondit a 1 chiffre apres la virgule 42.55 | round(1)</p><br>
 
-{{42.55 | round(1, 'ceil')}}
+{{42.55 | round(1, 'ceil') }}<p>arrondit a 1 chiffre apres la virgule 42.55 | round(1)</p><br>
 
 {% endblock %}

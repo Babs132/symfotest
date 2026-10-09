@@ -19,8 +19,12 @@ class AppFixtures extends Fixture
 
             $prod ->setTitle("Produit".$i)
                 ->setDate($date)
-                ->setDescription("");
-                $menager->persist($prod);
+                ->setDescription("Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                 facilis id eos exercitationem quam, consequatur assumenda quod unde dolorum amet explicabo 
+                 reiciendis eum consequuntur, suscipit distinctio vitae aliquam soluta autem saepe 
+                 repellendus! Cumque unde itaque amet voluptatum incidunt illo 
+                 repudiandae quisquam sapiente esse modi facere vero, dicta consectetur dolore minus.");
+            $manager->persist($prod);
         }
 
         $manager->flush();

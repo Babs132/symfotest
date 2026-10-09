@@ -1,0 +1,13 @@
+
+1. **`{% for product in products %}`** : C'est une boucle qui parcourt une liste ou un tableau appelé `products`. À chaque itération, l'élément en cours est stocké dans la variable `product`.
+2. **`<div> ... </div>`** : Il crée une balise HTML `<div>` pour chaque produit de la liste.
+3. **`<a href="..."> ... </a>`** : Il génère un lien HTML pour chaque produit.
+* **`path('product_show', {id: product.id})`** : Génère l'URL de la page du produit en utilisant le nom de la route `'product_show'` et en lui passant l'identifiant du produit (`product.id`) comme paramètre.
+* **`{{ product.title }}`** : Affiche le titre du produit à l'intérieur du lien.
+
+
+4. **`{% endfor %}`** : Marque la fin de la boucle.
+
+---
+
+Ce snippet parcourt une liste de produits et génère pour chacun d'eux une div contenant un lien vers la page de détail du produit, avec son titre comme texte cliquable.

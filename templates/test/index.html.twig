@@ -4,9 +4,21 @@
 
 {% block body %}
  <h1>Page test</h1>
+
+ <blockquote class="blockquote">
+  <p>A well-known quote, contained in a blockquote element.</p>
+</blockquote>
+
+ <div class="container-fluid">
+<blockquote class="blockquote text-center">
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur ad.ipiscing elit. Integer posuere erat a ante Lorem ipsum dolor sit amet, consectetur ad.ipiscing elit. Integer posuere erat a anteLorem ipsum dolor sit amet, consectetur ad.ipiscing elit. Integer posuere erat a ante
+    Lorem ipsum dolor sit amet, consectetur ad.ipiscing elit. Integer posuere erat a anteLorem ipsum dolor sit amet, consectetur ad.ipiscing elit. Integer posuere erat a ante
+  </p>
+</blockquote>
+</div>
+
  {#<a href="{{path('app_home')}}">Revenir à l'accueil</a>#}
-
-
+ <div class="container-fluid">
  <button type="button" class="btn btn-primary position-relative">
   Inbox
   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -14,7 +26,9 @@
     <span class="visually-hidden">unread messages</span>
   </span>
 </button>
+ </div>
 
+<div class="container-fluid">
 <span class="badge text-bg-primary">Primary</span>
 <span class="badge text-bg-secondary">Secondary</span>
 <span class="badge text-bg-success">Success</span>
@@ -23,7 +37,8 @@
 <span class="badge text-bg-info">Info</span>
 <span class="badge text-bg-light">Light</span>
 <span class="badge text-bg-dark">Dark</span>
-
+</div>
+<div class="container-fluid">
  <div class="mb-3">
   <label for="formFile" class="form-label">Default file input example</label>
   <input class="form-control" type="file" id="formFile">
@@ -48,5 +63,13 @@
   <label for="formFileLg" class="form-label">Large file input example</label>
   <input class="form-control form-control-lg" id="formFileLg" type="file">
 </div>
+</div>
 
+<div class="container-fluid">
+<blockquote class="blockquote text-center">
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur ad.ipiscing elit. Integer posuere erat a ante Lorem ipsum dolor sit amet, consectetur ad.ipiscing elit. Integer posuere erat a anteLorem ipsum dolor sit amet, consectetur ad.ipiscing elit. Integer posuere erat a ante
+    Lorem ipsum dolor sit amet, consectetur ad.ipiscing elit. Integer posuere erat a anteLorem ipsum dolor sit amet, consectetur ad.ipiscing elit. Integer posuere erat a ante
+  </p>
+</blockquote>
+</div>
 {%endblock%}
